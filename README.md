@@ -1,4 +1,5 @@
-# portpolio
+https://parksiyoun.github.io/portpolio/
+portpolio
 siyoun.tester 포트폴리오
 - index.html: 메인 페이지와 About Me
 - portfolio.html: PPT 작업물을 추가할 포트폴리오 페이지
