@@ -9,30 +9,9 @@
 .study-intro .page-lead { max-width: 650px; }
 .chapter-block { padding-top: 74px; scroll-margin-top: 105px; }
 .chapter-block .block-heading { margin-bottom: 10px; }
-.chapter-kicker { margin: 0 0 7px; color: #8a967d; font: 9px var(--mono); letter-spacing: 1.25px; }
+.chapter-kicker { display: none; }
 .chapter-summary { margin: 0 0 22px 39px; color: #7d8874; font-size: 13px; line-height: 1.9; }
 .study-topic-list { display: grid; gap: 10px; }
-.study-topic {
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,.98);
-  border-radius: 18px;
-  background: rgba(255,255,255,.68);
-  box-shadow: 0 10px 28px rgba(72,98,55,.055);
-}
-
-
-.topic-body {
-  padding: 0 22px 22px;
-  border-top: 1px solid rgba(75,104,57,.1);
-  color: #697363;
-  font-size: 12px;
-  line-height: 1.95;
-}
-.topic-body p { margin: 15px 0 0; }
-.topic-body h3 { margin: 19px 0 -5px; color: #424d3b; font-size: 13px; }
-.topic-body ul, .topic-body ol { margin: 13px 0 0; padding-left: 20px; }
-.topic-body li { margin: 5px 0; padding-left: 2px; }
-.topic-body strong { color: #49583e; }
 .note-callout {
   padding: 12px 15px;
   border-left: 3px solid #9fbd75;
@@ -55,7 +34,6 @@
   .chapter-summary { margin-left: 36px; font-size: 12px; }
 
 
-  .topic-body { padding: 0 17px 18px; font-size: 12px; }
 }
 
 
@@ -86,17 +64,6 @@
 }
 .study-sidebar .side-link-sub:hover,
 .study-sidebar .side-link-sub.active { color: #567b38; background: rgba(148,185,84,.12); }
-.study-topic .topic-title {
-  margin: 0;
-  padding: 18px 22px 15px;
-  border-bottom: 1px solid rgba(75,104,57,.1);
-  color: #384332;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.55;
-}
-.study-topic .topic-body { border-top: 0; }
-.study-topic { scroll-margin-top: 105px; }
 @media (max-width: 800px) {
   .study-sidebar { max-height: calc(100vh - 110px); }
 }
@@ -112,8 +79,6 @@
   .study-toc-list { gap: 2px; }
   .study-sidebar .side-link { min-height: 34px; padding: 7px 10px; }
   .study-sidebar .side-link-sub { margin-left: 24px; padding: 5px 10px; }
-  .study-topic .topic-title { padding: 15px 17px 13px; font-size: 13px; }
-  .study-topic { scroll-margin-top: 82px; }
 }
 
 
@@ -182,6 +147,8 @@
 .study-layout { grid-template-columns: 230px minmax(0, 1fr); gap: 54px; }
 .study-sidebar .toc-chapter > .side-link { white-space: nowrap; }
 .chapter-block > .block-heading {
+  align-items: center;
+  gap: 12px;
   position: sticky;
   z-index: 8;
   top: 92px;
@@ -191,6 +158,11 @@
   background: rgba(247, 249, 239, .94);
   box-shadow: 0 8px 24px rgba(72, 98, 55, .08);
   backdrop-filter: blur(14px);
+}
+.chapter-block .block-number {
+  padding: 0;
+  color: #789d48;
+  font: 700 23px/1.2 var(--sans);
 }
 @media (max-width: 800px) {
   .study-layout { grid-template-columns: 220px minmax(0, 1fr); gap: 34px; }

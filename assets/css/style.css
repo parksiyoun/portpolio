@@ -182,18 +182,6 @@ a { color: inherit; text-decoration: none; }
 .block-heading { display: flex; align-items: start; gap: 18px; margin-bottom: 22px; }
 .block-number { padding-top: 4px; color: #789d48; font: 12px var(--mono); }
 .block-heading h2 { margin: 0; color: #303a2c; font-size: 23px; letter-spacing: -.7px; }
-.log-card { margin-bottom: 14px; padding: 26px 28px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .98); border-radius: 22px; background: rgba(255, 255, 255, .68); box-shadow: 0 12px 32px rgba(72, 98, 55, .06); }
-.log-date { color: #7d8874; font: 10px var(--mono); }
-.log-card h3 { margin: 17px 0 9px; color: #343a30; font-size: 17px; }
-.log-card p { margin: 0; color: #7d8874; font-size: 12px; line-height: 1.9; }
-.reflection-card { position: relative; padding: 26px 30px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .98); border-radius: 22px; background: linear-gradient(125deg, rgba(255, 253, 227, .92), rgba(222, 240, 252, .9)); }
-.reflection-mark { display: block; height: 42px; color: #8eae58; font: 60px Georgia, serif; }
-.reflection-card p { margin: 0; color: #5e6855; font-size: 14px; line-height: 1.9; }
-.next-card { display: flex; align-items: start; gap: 17px; margin-bottom: 75px; padding: 24px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .98); border-radius: 22px; background: rgba(255, 255, 255, .68); }
-.next-icon { color: #789f59; font-size: 25px; }
-.next-card h3 { margin: 3px 0 8px; color: #343a30; font-size: 14px; }
-.next-card p { margin: 0; color: #7d8874; font-size: 12px; line-height: 1.9; }
-
 .contact-main { padding-bottom: 92px; }
 .contact-card { display: grid; grid-template-columns: 1fr 1fr; min-height: 340px; margin-top: 63px; overflow: hidden; border: 1px solid rgba(255, 255, 255, .98); border-radius: 22px; background: rgba(255, 255, 255, .65); box-shadow: 0 22px 60px rgba(72, 98, 55, .11); }
 .contact-message { padding: 46px 50px; background: linear-gradient(135deg, rgba(255, 249, 211, .62), rgba(217, 237, 249, .7)); }
@@ -246,7 +234,6 @@ a { color: inherit; text-decoration: none; }
   .side-link span { font-size: 10px; }
   .sidebar-note { display: none; }
   .study-block { padding-top: 49px; scroll-margin-top: 80px; }
-  .log-card { padding: 21px; }
   .contact-main { padding-bottom: 60px; }
   .contact-card { grid-template-columns: 1fr; margin-top: 39px; }
   .contact-message { padding: 34px 28px; }
