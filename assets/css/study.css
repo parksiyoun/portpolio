@@ -69,29 +69,12 @@
 }
 @media (max-width: 600px) {
   .study-sidebar {
-    position: relative;
-    top: auto;
-    max-height: 34vh;
-    overflow-y: auto;
-    padding: 12px 0;
-    margin-bottom: 8px;
-  }
-  .study-toc-list { gap: 2px; }
-  .study-sidebar .side-link { min-height: 34px; padding: 7px 10px; }
-  .study-sidebar .side-link-sub { margin-left: 24px; padding: 5px 10px; }
-}
-
-
-
-
-@media (max-width: 600px) {
-  .study-sidebar {
-    display: block;
-    gap: 0;
-    overflow-x: hidden;
-    white-space: normal;
+    display: none;
   }
 }
+
+
+
 
 /* Show one chapter's detail links at a time */
 .toc-subtopics { display: none; padding-top: 3px; }

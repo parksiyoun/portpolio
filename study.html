@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261112">
-  <link rel="stylesheet" href="assets/css/study.css?v=20261112">
-  <script src="assets/js/main.js?v=20261112" defer></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=20261117">
+  <link rel="stylesheet" href="assets/css/study.css?v=20261117">
+  <script src="assets/js/main.js?v=20261117" defer></script>
 </head>
 <body>
   <header class="site-header"><nav class="nav-shell" aria-label="주요 메뉴">
@@ -21,12 +21,12 @@
   <main class="wrap page-main study-layout">
     <aside class="study-sidebar" aria-label="학습 목차"><nav class="study-toc" aria-label="세부 목차">
       <ul class="study-toc-list">
-        <li class="toc-chapter"><a href="#chapter-foundations" class="side-link" aria-expanded="false" aria-controls="toc-foundations"><span class="toc-number">01</span><img class="toc-icon toc-icon-chapter" src="assets/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스팅의 기초</span></a><ul id="toc-foundations" class="toc-subtopics"></ul></li>
-        <li class="toc-chapter"><a href="#chapter-lifecycle" class="side-link" aria-expanded="false" aria-controls="toc-lifecycle"><span class="toc-number">02</span><img class="toc-icon toc-icon-chapter" src="assets/desktop-chapter.svg" alt="" aria-hidden="true"><span>개발 수명주기와 테스팅</span></a><ul id="toc-lifecycle" class="toc-subtopics"></ul></li>
-        <li class="toc-chapter"><a href="#chapter-static" class="side-link" aria-expanded="false" aria-controls="toc-static"><span class="toc-number">03</span><img class="toc-icon toc-icon-chapter" src="assets/desktop-chapter.svg" alt="" aria-hidden="true"><span>정적 테스팅</span></a><ul id="toc-static" class="toc-subtopics"></ul></li>
-        <li class="toc-chapter"><a href="#chapter-design" class="side-link" aria-expanded="false" aria-controls="toc-design"><span class="toc-number">04</span><img class="toc-icon toc-icon-chapter" src="assets/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스트 분석과 설계</span></a><ul id="toc-design" class="toc-subtopics"></ul></li>
-        <li class="toc-chapter"><a href="#chapter-management" class="side-link" aria-expanded="false" aria-controls="toc-management"><span class="toc-number">05</span><img class="toc-icon toc-icon-chapter" src="assets/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스트 활동 관리</span></a><ul id="toc-management" class="toc-subtopics"></ul></li>
-        <li class="toc-chapter"><a href="#chapter-tools" class="side-link" aria-expanded="false" aria-controls="toc-tools"><span class="toc-number">06</span><img class="toc-icon toc-icon-chapter" src="assets/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스트 도구</span></a><ul id="toc-tools" class="toc-subtopics"></ul></li>
+        <li class="toc-chapter"><a href="#chapter-foundations" class="side-link" aria-expanded="false" aria-controls="toc-foundations"><span class="toc-number">01</span><img class="toc-icon toc-icon-chapter" src="assets/icons/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스팅의 기초</span></a><ul id="toc-foundations" class="toc-subtopics"></ul></li>
+        <li class="toc-chapter"><a href="#chapter-lifecycle" class="side-link" aria-expanded="false" aria-controls="toc-lifecycle"><span class="toc-number">02</span><img class="toc-icon toc-icon-chapter" src="assets/icons/desktop-chapter.svg" alt="" aria-hidden="true"><span>개발 수명주기와 테스팅</span></a><ul id="toc-lifecycle" class="toc-subtopics"></ul></li>
+        <li class="toc-chapter"><a href="#chapter-static" class="side-link" aria-expanded="false" aria-controls="toc-static"><span class="toc-number">03</span><img class="toc-icon toc-icon-chapter" src="assets/icons/desktop-chapter.svg" alt="" aria-hidden="true"><span>정적 테스팅</span></a><ul id="toc-static" class="toc-subtopics"></ul></li>
+        <li class="toc-chapter"><a href="#chapter-design" class="side-link" aria-expanded="false" aria-controls="toc-design"><span class="toc-number">04</span><img class="toc-icon toc-icon-chapter" src="assets/icons/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스트 분석과 설계</span></a><ul id="toc-design" class="toc-subtopics"></ul></li>
+        <li class="toc-chapter"><a href="#chapter-management" class="side-link" aria-expanded="false" aria-controls="toc-management"><span class="toc-number">05</span><img class="toc-icon toc-icon-chapter" src="assets/icons/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스트 활동 관리</span></a><ul id="toc-management" class="toc-subtopics"></ul></li>
+        <li class="toc-chapter"><a href="#chapter-tools" class="side-link" aria-expanded="false" aria-controls="toc-tools"><span class="toc-number">06</span><img class="toc-icon toc-icon-chapter" src="assets/icons/desktop-chapter.svg" alt="" aria-hidden="true"><span>테스트 도구</span></a><ul id="toc-tools" class="toc-subtopics"></ul></li>
       </ul>
     </nav><div class="sidebar-note">LEARN<br>·<br>REFLECT<br>·<br>REPEAT</div></aside>
 
@@ -187,7 +187,7 @@
         link.className = 'side-link side-link-sub' + (isSubtitle ? ' side-link-nested' : '');
         const icon = document.createElement('img');
         icon.className = 'toc-icon ' + (isSubtitle ? 'toc-icon-subtitle' : 'toc-icon-title');
-        icon.src = isSubtitle ? 'assets/file-subtitle.svg' : 'assets/folder-title.svg';
+        icon.src = isSubtitle ? 'assets/icons/file-subtitle.svg' : 'assets/icons/folder-title.svg';
         icon.alt = '';
         icon.setAttribute('aria-hidden', 'true');
         link.appendChild(icon);
