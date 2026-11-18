@@ -30,10 +30,18 @@
 }
 @media (max-width: 600px) {
   .study-content { padding-bottom: 55px; }
+  .study-content,
+  .study-topic-list,
+  .syllabus-section,
+  .syllabus-subtopic { min-width: 0; }
   .chapter-block { padding-top: 52px; scroll-margin-top: 82px; }
   .chapter-summary { margin-left: 36px; font-size: 12px; }
-
-
+  .class-note,
+  .note-callout { overflow-wrap: anywhere; }
+  .table-scroll { max-width: 100%; }
+  .study-table { min-width: 0; table-layout: fixed; }
+  .study-table th,
+  .study-table td { padding: 8px 6px; overflow-wrap: anywhere; }
 }
 
 
