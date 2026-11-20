@@ -173,6 +173,9 @@ a { color: inherit; text-decoration: none; }
 .project-card { display: flex; flex-direction: column; min-height: 300px; padding: 30px; border: 1px solid rgba(255, 255, 255, .98); border-radius: 24px; background: linear-gradient(145deg, rgba(255, 255, 255, .94), rgba(226, 239, 204, .8)); box-shadow: 0 18px 48px rgba(72, 98, 55, .1); transition: transform .2s ease, box-shadow .2s ease; }
 .project-card:hover { transform: translateY(-5px); box-shadow: 0 22px 50px rgba(72, 98, 55, .16); }
 .project-card:focus-visible { outline: 3px solid #62883e; outline-offset: 4px; }
+.project-card--linked { position: relative; }
+.project-card--linked:has(.project-card-main-link:focus-visible) { outline: 3px solid #62883e; outline-offset: 4px; }
+.project-card-main-link::after { content: ""; position: absolute; inset: 0; }
 .project-card-top { display: flex; align-items: start; justify-content: space-between; }
 .project-arrow { color: #789f59; font-size: 27px; line-height: 1; }
 .project-image { display: block; width: 100%; margin-top: 18px; padding: 10px; border: 1px solid rgba(75, 104, 57, .15); border-radius: 12px; background: rgba(255, 255, 255, .65); }
